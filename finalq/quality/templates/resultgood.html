@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/stylegood.css'%}"/>
+</head>
+<body>
+<form action="{% url 'home' %}">
+<h1>Hey lets have a drink.The quality of wine is very good.</h1>
+<button type="submit" class="button blue rounded ae-7 fromCenter" name="button">click here to go back</button>
+<h2> “A glass of wine is good for your health… The leftover in the bottle is good for your morale.” </h2>
+
+</form>
+</body>
+</html>

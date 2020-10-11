@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>wine quality prediction</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}"/>
+      <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+  </head>
+  {% load static %}
+  <div>
+  <h1>QUALITY WINES</h1>
+
+  <p>An empty bottle of wine is better than a filled one. It shows achievement.</p>
+</div>
+<body>
+
+    <form action="{% url 'result' %}">
+        <span>
+            <div class="incredible">
+              <input type="text" class="alcohol" name="fixed_acidity" placeholder="fixed acidity" required="required"/>
+                <input type="text" class="alcohol" name="volatile_acidity" placeholder="volatile acidity" required="required"/>
+                <input type="text" class="alcohol" name="citric_acid" placeholder="citric acid" required="required"/>
+                <input type="text" class="alcohol" name="residual_sugar" placeholder="residual sugar" required="required"/>
+                <input type="text" class="alcohol" name="chlorides" placeholder="chlorides" required="required"/>
+                <input type="text" class="alcohol" name="free_sulphur_dioxide" placeholder="free sulphur dioxide" required="required"/>
+                <input type="text" class="alcohol" name="alcohol" placeholder="alcohol" required="required"/>
+                <input type="text" class="alcohol" name="density" placeholder="density" required="required"/>
+                <input type="text" class="alcohol"name="pH" placeholder="pH" required="required"/>
+                <input type="text" class="alcohol" name="sulphates" placeholder="sulphates" required="required"/>
+            </div>
+            </span>
+        <div class="center">
+        <button type="submit" class="button blue rounded ae-7 fromCenter" name="button">submit</button>
+            </div>
+
+    </form>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
