@@ -12,7 +12,7 @@ def home(request):
 
 
 def result(request):
-    cls = joblib.load('C:/Users/salwa/PycharmProjects/finalq/finalq/quality/static/quality/quality.pkl')
+    cls = joblib.load('model path/quality.pkl')
 
     value1 = request.GET['fixed_acidity']
     value2 = request.GET['volatile_acidity']
